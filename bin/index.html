@@ -7,7 +7,7 @@
 	<link rel='stylesheet' href='https://cdn.datatables.net/s/ju/dt-1.10.10,b-1.1.0,fc-3.2.0,r-2.0.0,sc-1.4.0/datatables.min.css'>
 	<link rel='stylesheet' href='https://cdn.datatables.net/fixedcolumns/3.2.0/css/fixedColumns.dataTables.min.css'>
 	<style>
-		th, td { white-space: nowrap; }
+		/* th, td { white-space: nowrap; } */
 		div.dataTables_wrapper {
 			width: 800px;
 			margin: 0 auto;
@@ -666,12 +666,13 @@
 <script src='https://cdn.datatables.net/s/ju/dt-1.10.10,b-1.1.0,fc-3.2.0,fh-3.1.0,r-2.0.0,sc-1.4.0/datatables.min.js'></script>
 <script>
 	$('#example').DataTable({
-		fixedColumns: {
-			leftColumns: 2
-		},
-		scrollY:        400,
 		scrollX:        true,
-		fixedColumns:   true
+		//scrollY:        400,
+		//fixedColumns:   true
+		fixedColumns: {
+			leftC: 1,
+			rightColumns: 1
+		}
 	});
 </script>
 
