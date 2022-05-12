@@ -1,2 +1,2 @@
-# -datatables-example
+# datatables-example
 DataTables Example
